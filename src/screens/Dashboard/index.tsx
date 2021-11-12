@@ -1,10 +1,12 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Container, Title } from './styles';
 
 interface DashboardProps {}
 
 export function Dashboard({}: DashboardProps) {
   return (
-    <Text>Esta no Dashboard</Text>
+    <Container>
+      <Title>GO FINANCE</Title>
+    </Container>
   )
 }
