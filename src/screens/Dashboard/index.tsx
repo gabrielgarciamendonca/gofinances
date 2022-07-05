@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
+import { HighlightCard } from "../../components/HighlightCard";
 
 import {
-    Container,
-    Header,
-    Icon,
-    Photo,
-    User,
-    UserGreeting,
-    UserInfo,
-    UserName,
-    UserWrapper,
-} from './styles';
+  Container,
+  Header,
+  Icon,
+  Photo,
+  User,
+  UserGreeting,
+  UserInfo,
+  UserName,
+  UserWrapper,
+} from "./styles";
 
 interface DashboardProps {}
 
@@ -20,7 +21,11 @@ export function Dashboard({}: DashboardProps) {
       <Header>
         <UserWrapper>
           <UserInfo>
-            <Photo source={{ uri: "https://avatars.githubusercontent.com/u/57206636?v=4.png" }} />
+            <Photo
+              source={{
+                uri: "https://avatars.githubusercontent.com/u/57206636?v=4.png",
+              }}
+            />
             <User>
               <UserGreeting>Olá, </UserGreeting>
               <UserName>Gabriel</UserName>
@@ -29,6 +34,7 @@ export function Dashboard({}: DashboardProps) {
           <Icon name="power" />
         </UserWrapper>
       </Header>
+      <HighlightCard />
     </Container>
   );
 }
